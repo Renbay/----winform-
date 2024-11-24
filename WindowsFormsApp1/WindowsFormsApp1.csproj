@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B0ADAB9-6A17-43FB-87CC-849E28AB031D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form房屋物件.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form房屋物件.Designer.cs">
+      <DependentUpon>Form房屋物件.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\manager 房屋物件.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\manager 房屋物件.Designer.cs">
+      <DependentUpon>manager 房屋物件.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\客戶設定.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\客戶設定.Designer.cs">
+      <DependentUpon>客戶設定.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\客戶預約列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\客戶預約列表.Designer.cs">
+      <DependentUpon>客戶預約列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\忘記密碼.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\忘記密碼.Designer.cs">
+      <DependentUpon>忘記密碼.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\會員管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\會員管理.Designer.cs">
+      <DependentUpon>會員管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\物件管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\物件管理.Designer.cs">
+      <DependentUpon>物件管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\登入畫面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\登入畫面.Designer.cs">
+      <DependentUpon>登入畫面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\管理者介面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\管理者介面.Designer.cs">
+      <DependentUpon>管理者介面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\聯絡我們.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\聯絡我們.Designer.cs">
+      <DependentUpon>聯絡我們.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\訪客介面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\訪客介面.Designer.cs">
+      <DependentUpon>訪客介面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\訪客房屋物件.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\訪客房屋物件.Designer.cs">
+      <DependentUpon>訪客房屋物件.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\註冊畫面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\註冊畫面.Designer.cs">
+      <DependentUpon>註冊畫面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\預約列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\預約列表.Designer.cs">
+      <DependentUpon>預約列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\頭期試算.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\頭期試算.Designer.cs">
+      <DependentUpon>頭期試算.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globalvar.cs" />
+    <Compile Include="myhouseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myhouseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myhouseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myhouseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myhouseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myhouseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form房屋物件.resx">
+      <DependentUpon>Form房屋物件.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\manager 房屋物件.resx">
+      <DependentUpon>manager 房屋物件.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\客戶設定.resx">
+      <DependentUpon>客戶設定.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\客戶預約列表.resx">
+      <DependentUpon>客戶預約列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\忘記密碼.resx">
+      <DependentUpon>忘記密碼.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\會員管理.resx">
+      <DependentUpon>會員管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\物件管理.resx">
+      <DependentUpon>物件管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\登入畫面.resx">
+      <DependentUpon>登入畫面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\管理者介面.resx">
+      <DependentUpon>管理者介面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\聯絡我們.resx">
+      <DependentUpon>聯絡我們.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\訪客介面.resx">
+      <DependentUpon>訪客介面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\訪客房屋物件.resx">
+      <DependentUpon>訪客房屋物件.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\註冊畫面.resx">
+      <DependentUpon>註冊畫面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\預約列表.resx">
+      <DependentUpon>預約列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\頭期試算.resx">
+      <DependentUpon>頭期試算.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="myhouseDataSet.xsc">
+      <DependentUpon>myhouseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myhouseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myhouseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myhouseDataSet.xss">
+      <DependentUpon>myhouseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myhouseDataSet1.xsc">
+      <DependentUpon>myhouseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myhouseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myhouseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myhouseDataSet1.xss">
+      <DependentUpon>myhouseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myhouseDataSet2.xsc">
+      <DependentUpon>myhouseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="myhouseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myhouseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myhouseDataSet2.xss">
+      <DependentUpon>myhouseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\11.png" />
+    <Content Include="Resources\111.jpg" />
+    <Content Include="Resources\111.png" />
+    <Content Include="Resources\123.jpg" />
+    <Content Include="Resources\1231.jpg" />
+    <Content Include="Resources\1232.jpg" />
+    <Content Include="Resources\1233.jpg" />
+    <Content Include="Resources\1234.jpg" />
+    <None Include="Resources\2.png" />
+    <Content Include="Resources\22.png" />
+    <Content Include="Resources\221.png" />
+    <Content Include="Resources\2222.png" />
+    <Content Include="Resources\3333.png" />
+    <None Include="Resources\Lovepik_com-380269373-customer-login-avatar-client-gray-head-portrait.png" />
+    <Content Include="Resources\列表.png" />
+    <None Include="Resources\地圖.png" />
+    <None Include="Resources\安心成家.jpg" />
+    <Content Include="Resources\房子.jpg" />
+    <Content Include="Resources\房子1.jpg" />
+    <Content Include="Resources\房子2.jpg" />
+    <Content Include="Resources\房子2.png" />
+    <Content Include="Resources\設定圖片.png" />
+    <Content Include="Resources\設定圖片1.png" />
+    <Content Include="Resources\電話.png" />
+    <Content Include="Resources\電話1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
